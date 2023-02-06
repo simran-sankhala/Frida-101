@@ -12,6 +12,9 @@ We can modify these arguments / return values --> allow us to do cool bypasses w
 3. Check if device is accessible
 
 ```sh
+$ pip install frida-tools
+```
+```sh
 -> % adb devices
 List of devices attached
 192.168.56.101:5555	device
