@@ -1,4 +1,4 @@
-# What Is Frida
+# What is Frida
 Frida is a dynamic code instrumentation toolkit. It lets you inject your script into black-box processes(No source code needed). It allows you to inject your own code and to programmatically and interactively inspect and change running processes.
 
 Frida, on the other hand, allows you to interact with the Android APK so you can inject code to bypass many of the techniques developers use to secure the apps. Some examples include bypassing the login screen to authenticate without a password or disabling SSL pinning to allow the hacker to see all the network traffic between your app and any backend servers.
