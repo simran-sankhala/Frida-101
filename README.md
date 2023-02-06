@@ -37,6 +37,8 @@ We can dump classes/modules/functions.
 We can intercept functions/method invocation to read arguments / return values.
 We can modify these arguments / return values --> allow us to do cool bypasses without having to recompile the target binary/application (oh no... all the packaging and jar signing nightmares...).
 
+![](scripts/code.png)
+
 ## Set Up
 1. Install genymotion.
 2. Install the app in genymotion
