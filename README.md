@@ -15,6 +15,8 @@ The patched method is sent from the computer of the User to the agent frida (ins
 The agent being inserted in the application on the mobile.
 And there, the patch (in js) is compiled and used to patch application
 
+![](scripts/frida-2.webp)
+
 ## Frida Android Set up 
 
 ## Little Intro
