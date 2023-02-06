@@ -1,3 +1,5 @@
+![](scripts/frida.png)
+
 # What is Frida
 Frida is a dynamic code instrumentation toolkit. It lets you inject your script into black-box processes(No source code needed). It allows you to inject your own code and to programmatically and interactively inspect and change running processes.
 
