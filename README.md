@@ -1,4 +1,22 @@
-# Frida Android Set up 
+# What Is Frida
+Frida is a dynamic code instrumentation toolkit. It lets you inject your script into black-box processes(No source code needed). It allows you to inject your own code and to programmatically and interactively inspect and change running processes.
+
+Frida, on the other hand, allows you to interact with the Android APK so you can inject code to bypass many of the techniques developers use to secure the apps. Some examples include bypassing the login screen to authenticate without a password or disabling SSL pinning to allow the hacker to see all the network traffic between your app and any backend servers.
+
+Many of the method calls you make in your Android app can be hijacked or overridden by Frida for purposes that were never intended. By injecting JavaScript code, Frida can disable or enable a switch or pass fake parameters to gain access to information that would not otherwise be available.
+
+## Prerequisites
+Before starting with Frida, it is assumed that the reader has prior knowledge of Javascript. It would help to better Understanding of API calls and build your own custom tools
+
+## How Frida Works?
+```
+    First User have to create an file in which patching method written like Accessing any method value, or changing return value .
+    The patched method is sent from the computer of the User to the agent frida (installed on android device),
+    The agent being inserted in the application on the mobile.
+    And there, the patch (in js) is compiled and used to patch application
+```
+
+## Frida Android Set up 
 
 ## Little Intro
 Given a process, frida allows us to intercept the memory of the process.
