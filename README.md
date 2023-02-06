@@ -19,6 +19,16 @@ And there, the patch (in js) is compiled and used to patch application
 
 ![](scripts/frida-3.webp)
 
+While the application is running (the user of the phone starts the app)
+
+The ART loads the app’s .oat file to run it and the .so containing FridaDroid + patch is started.
+In the .so, FridaDroid hook ART functions
+Get the references of the target method using the hooks obtained in (1).
+Compile the patch and modify the reference to the target method with the binaries obtained at the end of the compilation.
+The application continues to run :
+
+![](scripts/frida-4.webp)
+
 ## Frida Android Set up 
 
 ## Little Intro
