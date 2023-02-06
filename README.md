@@ -9,12 +9,11 @@ Many of the method calls you make in your Android app can be hijacked or overrid
 Before starting with Frida, it is assumed that the reader has prior knowledge of Javascript. It would help to better Understanding of API calls and build your own custom tools
 
 ## How Frida Works?
-```
+
     First User have to create an file in which patching method written like Accessing any method value, or changing return value .
     The patched method is sent from the computer of the User to the agent frida (installed on android device),
     The agent being inserted in the application on the mobile.
     And there, the patch (in js) is compiled and used to patch application
-```
 
 ## Frida Android Set up 
 
