@@ -271,7 +271,7 @@ if(deeplinkUri.toString().startsWith("deeplink://handle/")) {
 
 # Vuln app
 
-![](https://github.com/oversecured/ovaa)
+![Vuln App](https://github.com/oversecured/ovaa)
 
 
 
