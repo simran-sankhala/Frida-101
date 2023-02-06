@@ -17,6 +17,8 @@ And there, the patch (in js) is compiled and used to patch application
 
 ![](scripts/frida-2.webp)
 
+![](scripts/frida-3.webp)
+
 ## Frida Android Set up 
 
 ## Little Intro
