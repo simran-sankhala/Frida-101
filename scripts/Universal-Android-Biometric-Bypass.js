@@ -188,4 +188,6 @@ function enumMethods(targetClass) {
     return ownMethods;
 }
 
-# frida --codeshare ax/universal-android-biometric-bypass -f YOUR_BINARY
+/*
+ frida --codeshare ax/universal-android-biometric-bypass -f YOUR_BINARY
+*/
