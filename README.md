@@ -170,6 +170,40 @@ Spawned `com.android.calculator2`. Resuming main thread!
 We should see a calculator pop up inside genymotion. The above is a frida console shell that accept frida's javascript. This console is useful because of the autocomplete feature. We can use this console to help us build our frida javascript scripts.
 
 
+## From Sniffing https traffic on Android 11, installing a certificate from Burp Suite on an Android 11 emulator:
+
+```sh
+openssl x509 -inform der -in burp.cer -out certificate.pem
+cp certificate.pem `openssl x509 -inform pem -subject_hash_old -in certificate.pem | head -1`.0
+./emulator -avd rRoot -writable-system
+adb push 9a5ba575.0 //sdcard/Download
+adb root
+adb shell avbctl disable-verification
+adb reboot
+adb root
+adb remount
+adb shell
+cp /sdcard/Download/9a5ba575.0 /system/etc/security/cacerts/
+chmod 644 /system/etc/security/cacerts/9a5ba575.0
+reboot
+```
+#### Note: //sdcard and similar in adb push commands is to make it work with git bash on Windows.
+
+## From Sniffing TLS traffic on Android, setting up PolarProxy for sniffing TLS traffic:
+
+```sh
+# Start PolarProxy
+PolarProxy -p 443,80 -w polarproxy.pcap
+ 
+# Setup adb reverse connection
+adb reverse tcp:443 tcp:443
+ 
+# iptables setup
+adb root
+adb shell
+iptables -t nat -A OUTPUT -p tcp --dport 443 -j DNAT --to-destination 127.0.0.1:443
+```
+
 
 # Frida Java API
 
